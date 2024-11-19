@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Me</title>
+  <style>
+    body {
+     background-color: #D8CAF6;
+     }
+    #A1 {
+      background-color: #D8CAF6;
+      color: Yellow;
+      border: 4px inset #9967E0;
+      border-radius: 20px;
+      padding: 5px
+    }
+    
+    #b1, #b2, #b3 {
+      background-color: #C2A9EF;
+      width: 100%;
+      border: 4px outset #9667E0;
+      border-radius: 20px;
+      color: White;
+      font-size: 15px;
+      text-style: Bold;
+    }
+    
+    #d1, #d2, #d3 {
+      background-color: 9667E0;
+      color: white;
+      border: 2px dashed green;
+      border-radius: 20px;
+      display: none; /* Initially hide the divs */
+    }
+  </style>
+</head>
+<body>
+  <span id="s1">
+  <p>
+    <h2 id="A1">Hi THERE👋</h2>
+  </p>
+  <hr>
+  <p id="p2">
+    <h5>You Are Highly Welcome To My Page🌹</h5>
+  </p>
+  <hr>
+  <button onclick="showHide1()" id="b1">About Me</button><br>
+  <button onclick="showHide2()" id="b2">My Services</button><br>
+  <button onclick="showHide3()" id="b3">Contact Me</button><br>
+  <div id="d1">
+    <p>I'm <b>Bashir Mahmud Muktar</b> by name, i born in Nguru local government area Yobe State, <strong>on 21, May, 2004</strong>, i attend institute Anwarul islam both primary and secondary section, and University Foundation Academy Nguru.</p>
+  </div>
+  <div id="d2">
+    <img src="(link unavailable)" width="100" height="100">
+  </div>
+  <div id="d3">
+    📞 Phone No:. 09019326486. <br>
+    📧 Email:. bashirmmuktar017@gmail.com <br>
+    📲 WhatsApp:. 09019326486. <br>
+    ♂️ Location:. Nguru Yobe State. <br>
+  </div>
+  </span>
+  
+  <script>
+    let isVisible1 = false;
+    let isVisible2 = false;
+    let isVisible3 = false;
+    
+    function showHide1() {
+      const d1 = document.getElementById("d1");
+      d1.style.display = isVisible1 ? "none" : "block";
+      isVisible1 = !isVisible1;
+    }
+    
+    function showHide2() {
+      const d2 = document.getElementById("d2");
+      d2.style.display = isVisible2 ? "none" : "block";
+      isVisible2 = !isVisible2;
+    }
+    
+    function showHide3() {
+      const d3 = document.getElementById("d3");
+      d3.style.display = isVisible3 ? "none" : "block";
+      isVisible3 = !isVisible3;
+    }
+  </script>
+</body>
+</html>
